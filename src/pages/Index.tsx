@@ -5,6 +5,7 @@ import CityStories from '@/components/CityStories';
 import CityAnalysis from '@/components/CityAnalysis';
 import TerraQuiz from '@/components/TerraQuiz';
 import TimeMachine from '@/components/TimeMachine';
+import Solutions from '@/components/Solutions';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -28,6 +29,7 @@ const Index = () => {
         {activeSection === 'analysis' && <CityAnalysis />}
         {activeSection === 'quiz' && <TerraQuiz />}
         {activeSection === 'timemachine' && <TimeMachine />}
+        {activeSection === 'solutions' && <Solutions />}
       </main>
 
       <Footer />

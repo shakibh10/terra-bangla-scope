@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Satellite, TrendingUp, BookOpen, Brain, Clock } from 'lucide-react';
+import { Satellite, TrendingUp, BookOpen, Brain, Clock, Lightbulb } from 'lucide-react';
 
 interface HeroProps {
   onNavigate: (section: string) => void;
@@ -76,6 +76,16 @@ const Hero = ({ onNavigate }: HeroProps) => {
           >
             <Clock className="w-5 h-5 mr-2" />
             Time Machine
+          </Button>
+
+          <Button
+            size="lg"
+            variant="outline"
+            className="glass border-accent/50 hover:bg-accent/10 text-foreground font-semibold text-lg px-8 py-6 rounded-xl"
+            onClick={() => onNavigate('solutions')}
+          >
+            <Lightbulb className="w-5 h-5 mr-2" />
+            Solutions
           </Button>
         </div>
 
